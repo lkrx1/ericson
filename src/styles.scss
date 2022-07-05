@@ -1,4 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+table tr td {
+  vertical-align: top !important;
+  text-align: left !important;
+  padding-right: 36px !important;
+  vertical-align: middle !important;
+  font-family: 'Century Gothic' !important;
+  font-size: 0.9em !important;
+}
+
+table tr:hover {
+  cursor: pointer;
+}
+
+table tr td .actions {
+  visibility: hidden;
+}
+
+table tr:hover td .actions {
+  visibility: visible;
+}
+
+table tr:hover td .actions .fas:hover {
+  color: #d6ef87;
+}
